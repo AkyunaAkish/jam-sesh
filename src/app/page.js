@@ -8,10 +8,24 @@ import Table from './components/Table';
 
 export default function Assignments() {
   return (
-    <Box component="section" alignItems="center" display="flex">
-      <Typography variant="h4">ETRO 106 Assignment Status</Typography>
-
-      <Table />
+    <Box
+      sx={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        width: 'max-content', // Width adjusts to content
+        maxWidth: '100%',
+        margin: '0 auto', // Centers horizontally
+        p: 4,
+      }}
+    >
+      <Box sx={{ p: 2 }}>
+        <Typography variant="h4" sx={{ color: 'rgb(43,88,123)' }}>ETRO 106 Assignment Status</Typography>
+      </Box>
+      <Box>
+        <Table />
+      </Box>
     </Box>
   );
 }
