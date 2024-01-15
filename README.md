@@ -14,6 +14,11 @@ pnpm dev
 bun dev
 ```
 
+To export a build that can be used elsewhere as front-end files:
+```
+npm run export
+```
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
